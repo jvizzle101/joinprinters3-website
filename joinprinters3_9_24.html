@@ -12,7 +12,7 @@
 html{scroll-behavior:smooth}
 body{font-family:'Inter', sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;overflow-x:hidden}
 
-.nav-logo img{height:38px;width:auto}
+.nav-logo img{height:56px;width:auto}
 nav{position:absolute;top:0;right:0;z-index:10;padding:28px 48px;display:flex;align-items:center}
 .nav-links{display:flex;gap:28px;align-items:center}
 .nav-links a{font-size:13px;color:#fff;text-decoration:none;letter-spacing:.5px;transition:color .2s}
@@ -112,7 +112,7 @@ h2{font-family:var(--font-display);font-size:clamp(32px,4vw,52px);line-height:1.
 .btn-white:hover{background:var(--cream);color:var(--red-dark)}
 .cta-two-col{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;text-align:left}
 .cta-left-info{display:flex;flex-direction:column;gap:12px;margin-top:32px}
-.cta-left-info a{color:rgba(255,255,255,.85);text-decoration:none;font-size:16px;line-height:1.6;transition:color .2s}
+.cta-left-info a{color:#fff;text-decoration:none;font-size:16px;line-height:1.6;transition:color .2s}
 .cta-left-info a:hover{color:#fff}
 .cta-left-info span{color:#fff;font-size:16px}
 .contact-form{text-align:left}
@@ -133,7 +133,7 @@ h2{font-family:var(--font-display);font-size:clamp(32px,4vw,52px);line-height:1.
 .faq-icon.open{transform:rotate(45deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1),padding .4s}
 .faq-a.open{max-height:300px}
-.faq-a p{font-size:15px;color:var(--ink-mid);line-height:1.75;padding-bottom:24px;max-width:720px}
+.faq-a p{font-size:15px;color:var(--ink-mid);line-height:1.75;padding-bottom:24px;padding-right:12%}
 .reveal.visible{opacity:1;transform:none}
 .reveal-delay-1{transition-delay:.1s}
 .reveal-delay-2{transition-delay:.2s}
@@ -162,10 +162,10 @@ footer a{color:var(--ink-muted);text-decoration:none}
 
 <section class="hero">
 <nav>
-  <div class="nav-links">
-    <a href="#how-it-works">How It Works</a>
+<div class="nav-links">
+    <a href="#what-we-look-for">What We Look For</a>
     <a href="#stories">Success Stories</a>
-    <a href="#look-for">What We Look For</a>
+    <a href="#how-it-works">Our Process</a>
     <a href="#faq">FAQ</a>
     <a href="#contact" class="nav-cta">Talk to Us</a>
   </div>
@@ -181,7 +181,7 @@ footer a{color:var(--ink-muted);text-decoration:none}
   </div>
 </section>
 
-<section style="background:var(--white);padding:96px 40px">
+<section style="background:var(--white);padding:96px 40px" id="what-we-look-for">
   <div class="section-inner">
     <div class="section-label reveal">Is this you?</div>
     <h2 class="reveal">You&#8217;ve Spent Decades Building This.</h2>
@@ -241,7 +241,7 @@ footer a{color:var(--ink-muted);text-decoration:none}
 <section class="stories-bg" id="stories">
   <div class="section-inner">
     <div class="section-label reveal">Real partners, real outcomes</div>
-    <h2 class="reveal">Print Shops Who Joined Our Family</h2>
+    <h2 class="reveal">Print Shops Who Joined Our Family.</h2>
     <p class="section-sub reveal" style="max-width:none">Every situation is different. Here&#8217;s how it played out for three owners who chose to partner with us.</p>
     <div class="stories">
       <div class="story reveal">
@@ -278,7 +278,7 @@ footer a{color:var(--ink-muted);text-decoration:none}
 <section class="process-bg" id="how-it-works">
   <div class="section-inner">
     <div class="section-label reveal">Simple and straightforward</div>
-    <h2 class="reveal">How the Process Works</h2>
+    <h2 class="reveal">How the Process Works.</h2>
     <p class="section-sub reveal" style="color:#888">From first conversation to active partnership &#8212; most deals move at your pace, not ours.</p>
     <div class="steps-wrap">
       <div class="step" data-step="0">
@@ -318,7 +318,7 @@ footer a{color:var(--ink-muted);text-decoration:none}
     <div class="section-label reveal" style="color:#CC4444">
       Questions Owners Actually Ask
     </div>
-    <h2 class="reveal" style="color:var(--ink);margin-bottom:52px">What You&#8217;re Probably Wondering</h2>
+    <h2 class="reveal" style="color:var(--ink);margin-bottom:52px">What You&#8217;re Probably Wondering.</h2>
     <div class="faq-list reveal">
 
       <div class="faq-item">
@@ -327,7 +327,7 @@ footer a{color:var(--ink-muted);text-decoration:none}
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-a">
-          <p>Your team keeps their jobs. We&#8217;re not buying your business to strip it down &#8212; we&#8217;re absorbing it into an operation that already has the infrastructure to support them. In most cases, day-to-day operations continue with the same people in the same roles.</p>
+          <p>Your team keeps their jobs. We&#8217;re not buying your business to strip it down. In most cases, day-to-day operations continue with the same people in the same roles.</p>
         </div>
       </div>
 
@@ -337,27 +337,16 @@ footer a{color:var(--ink-muted);text-decoration:none}
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-a">
-          <p>Everything stays between us, full stop &#8212; whether we end up partnering or not. We&#8217;ve never disclosed that an owner reached out to us, and we never will. You can have a candid first conversation without worrying that your team or your customers will hear about it.</p>
+          <p>Everything stays between us &#8212; whether we end up partnering or not. You can have a candid first conversation without worrying that your team or your customers will hear about it.</p>
         </div>
       </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span>Do I have to sell 100% of my business?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">
-          <p>No. We build the deal around what you actually want. Some owners want a clean exit. Others want to stay involved in sales and keep earning commissions. Others want to hand off the operational headaches but stay connected to their customers. We&#8217;ve structured all of the above.</p>
-        </div>
-      </div>
-
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           <span>How do you determine what my business is worth?</span>
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-a">
-          <p>We look at your revenue, your customer relationships, your equipment, and what the business has actually built over time. We give you a straight number early in the conversation &#8212; no drawn-out process designed to wear you down. If the number doesn&#8217;t work for you, we&#8217;ll tell you that honestly too.</p>
+          <p>We look at your revenue, your customer relationships, your equipment and what the business has actually built over time.</p>
         </div>
       </div>
 
@@ -367,7 +356,7 @@ footer a{color:var(--ink-muted);text-decoration:none}
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-a">
-          <p>It&#8217;s worth a conversation. We&#8217;ve partnered with shops that were thriving and shops that were struggling. What we&#8217;re really evaluating is your customer base and your reputation in the market &#8212; not just a recent P&amp;L. If you&#8217;ve built something real over the years, that has value even if the last couple years were hard.</p>
+          <p>It&#8217;s worth a conversation. We&#8217;ve partnered with shops that were thriving and shops that were struggling. If you&#8217;ve built something real over the years, that has value even if the last couple years were hard.</p>
         </div>
       </div>
 
@@ -377,7 +366,7 @@ footer a{color:var(--ink-muted);text-decoration:none}
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-a">
-          <p>It moves at your pace. Some deals come together in a few weeks. Others take a few months because the owner needs time to think, or has specific timing around retirement or taxes. We don&#8217;t push. The first conversation is just a conversation &#8212; nothing gets signed, nothing gets announced.</p>
+          <p>It moves at your pace and on your terms. Some deals come together in a few weeks. Others take a few months because the owner needs time to think or has specific timing around retirement or taxes.</p>
         </div>
       </div>
 
@@ -387,30 +376,9 @@ footer a{color:var(--ink-muted);text-decoration:none}
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-a">
-          <p>Our core market is Long Island and the greater New York metro area, which is where our production facility and team are based. That said, we&#8217;re open to conversations with owners in nearby markets depending on the fit. If you&#8217;re not sure whether your location works, just reach out &#8212; the worst we can say is it&#8217;s not the right geography right now.</p>
+          <p>Our core market is Long Island and the greater New York metro area, which is where our production facility and team are based. That said, we&#8217;re open to conversations with owners in nearby markets depending on the fit.</p>
         </div>
       </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span>What do you need from me upfront?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">
-          <p>Nothing formal for the first conversation. We just want to understand your business &#8212; what you do, who your customers are, what you&#8217;re looking for. If things look like a fit and we move forward, we&#8217;ll ask for some basic financials at that point. No tax returns, no formal packages required just to have an initial discussion.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span>Can I change my mind partway through?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">
-          <p>Yes. Until something is signed, you can walk away at any point for any reason. We&#8217;ve had owners go through most of the process and decide the timing wasn&#8217;t right &#8212; and we stayed in touch. There&#8217;s no pressure, and there are no hard feelings.</p>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
