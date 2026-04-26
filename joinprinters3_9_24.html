@@ -56,39 +56,36 @@ h2{font-family:var(--font-display);font-size:clamp(32px,4vw,52px);line-height:1.
 .attribute:hover{background:var(--cream)}
 .attribute h4{font-size:15px;font-weight:700;color:var(--red);margin-bottom:8px;letter-spacing:.3px}
 .attribute p{font-size:14px;color:var(--ink-mid);line-height:1.6}
-.process-bg{background:var(--ink);color:var(--white)}
-.process-bg h2{color:var(--white)}
+.process-bg{background:var(--cream-dark);color:var(--ink)}
+.process-bg h2{color:var(--ink)}
 .process-bg .section-label{color:#CC4444}
 .process-bg .section-label::before{background:#CC4444}
-.process-bg .section-sub{color:#aaa}
-.process-bg{background:var(--ink);color:var(--white)}
-.process-bg h2{color:var(--white)}
-.process-bg .section-label{color:#CC4444}
-.process-bg .section-label::before{background:#CC4444}
-.process-bg .section-sub{color:#aaa}
+.process-bg .section-sub{color:var(--ink-mid)}
 .steps-wrap{position:relative;max-width:680px;margin:0 auto}
 .step{display:grid;grid-template-columns:72px 1fr;gap:36px;align-items:flex-start;margin-bottom:0;position:relative;z-index:2}
 .step-left{display:flex;flex-direction:column;align-items:center;align-self:stretch}
-.step-num{width:56px;height:56px;border-radius:50%;background:var(--gold);color:#1C1C1C;font-family:var(--font-display);font-size:22px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;z-index:3;transition:transform .4s,box-shadow .4s}
-.step-num.active{transform:scale(1.12);box-shadow:0 0 0 8px rgba(232,201,122,.35)}
+.step-num{width:56px;height:56px;border-radius:50%;background:var(--red);color:#fff;font-family:var(--font-display);font-size:22px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;z-index:3;transition:transform .4s,box-shadow .4s}
+.step-num.active{transform:scale(1.12);box-shadow:0 0 0 8px rgba(204,0,0,.18)}
 .step-connector{width:2px;flex:1;min-height:64px;margin-top:8px;margin-bottom:8px;position:relative;overflow:hidden}
-.step-connector-inner{width:100%;height:0;border-left:3px dashed var(--gold);position:absolute;top:0;left:-1px;transition:height .7s cubic-bezier(.4,0,.2,1)}
+.step-connector-inner{width:100%;height:0;border-left:3px dashed var(--red);position:absolute;top:0;left:-1px;transition:height .7s cubic-bezier(.4,0,.2,1)}
 .step-connector-inner.drawn{height:100%}
 .step-body{padding-bottom:64px}
 .step:last-child .step-body{padding-bottom:0}
-.step h4{font-size:18px;font-weight:700;color:#fff;margin-bottom:10px;padding-top:14px}
-.step p{font-size:14px;color:#888;line-height:1.7}
+.step h4{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:10px;padding-top:14px}
+.step p{font-size:14px;color:var(--ink-mid);line-height:1.7}
 .stories-bg{background:var(--white)}
 .stories{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
-.story{background:var(--cream);overflow:hidden;position:relative;transition:transform .3s}
-.story:hover{transform:translateY(-4px)}
-.story-
-.story-logo{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--ink);margin-bottom:16px}
+.story{background:#fff;overflow:hidden;position:relative;transition:transform .35s ease,box-shadow .35s ease}
+.story::before{content:"";position:absolute;top:0;left:0;height:3px;width:0;background:var(--gold);transition:width .4s ease}
+.story:hover{transform:translateY(-8px);box-shadow:0 16px 40px rgba(0,0,0,0.13)}
+.story:hover::before{width:100%}
+.story-logo{height:90px;display:flex;align-items:center;margin-bottom:16px}
+.story-logo img{max-height:90px;max-width:200px;width:auto;object-fit:contain}
 .story-meta{display:flex;flex-direction:column;gap:4px}
 .story-meta span{font-size:13px;color:var(--ink-mid)}
 .story-meta strong{color:var(--ink)}
 .story-body{padding:28px 32px}
-.story-before,.story-after{margin-bottom:20px}
+.story-meta{margin-bottom:36px}.story-before,.story-after{margin-bottom:20px}
 .story-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:8px}
 .story-before .story-label{color:var(--ink-muted)}
 .story-after .story-label{color:var(--red)}
@@ -113,24 +110,39 @@ h2{font-family:var(--font-display);font-size:clamp(32px,4vw,52px);line-height:1.
 .cta-contact a:hover{color:#fff}
 .btn-white{background:#fff;color:var(--red);padding:16px 40px;font-size:15px;font-weight:700;letter-spacing:.5px;border:none;cursor:pointer;text-decoration:none;display:inline-block;transition:all .2s;border-radius:2px}
 .btn-white:hover{background:var(--cream);color:var(--red-dark)}
-.faq-list{border-top:1px solid #2a2a2a}
-.faq-item{border-bottom:1px solid #2a2a2a}
+.cta-two-col{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;text-align:left}
+.cta-left-info{display:flex;flex-direction:column;gap:12px;margin-top:32px}
+.cta-left-info a{color:rgba(255,255,255,.85);text-decoration:none;font-size:16px;line-height:1.6;transition:color .2s}
+.cta-left-info a:hover{color:#fff}
+.cta-left-info span{color:#fff;font-size:16px}
+.contact-form{text-align:left}
+.contact-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-form .form-group{display:flex;flex-direction:column;margin-bottom:16px}
+.contact-form label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;margin-bottom:6px;font-weight:600}
+.contact-form input,.contact-form textarea{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;padding:14px 16px;font-size:15px;font-family:var(--font-body);border-radius:2px;outline:none;transition:border-color .2s,background .2s;width:100%;box-sizing:border-box}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(255,255,255,.35)}
+.contact-form input:focus,.contact-form textarea:focus{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.18)}
+.contact-form textarea{resize:vertical;min-height:120px}
+.contact-form .form-submit{margin-top:8px}
+.faq-list{border-top:1px solid var(--border)}
+.faq-item{border-bottom:1px solid var(--border)}
 .faq-q{width:100%;background:none;border:none;padding:24px 0;display:flex;justify-content:space-between;align-items:center;gap:24px;cursor:pointer;text-align:left}
-.faq-q span:first-child{font-family:var(--font-display);font-size:18px;font-weight:700;color:#fff;line-height:1.3}
+.faq-q span:first-child{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--ink);line-height:1.3}
 .faq-q:hover span:first-child{color:var(--red)}
 .faq-icon{font-size:22px;color:var(--red);font-weight:300;flex-shrink:0;transition:transform .3s;line-height:1;font-family:var(--font-body)}
 .faq-icon.open{transform:rotate(45deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1),padding .4s}
 .faq-a.open{max-height:300px}
-.faq-a p{font-size:15px;color:#888;line-height:1.75;padding-bottom:24px;max-width:720px}
+.faq-a p{font-size:15px;color:var(--ink-mid);line-height:1.75;padding-bottom:24px;max-width:720px}
 .reveal.visible{opacity:1;transform:none}
 .reveal-delay-1{transition-delay:.1s}
 .reveal-delay-2{transition-delay:.2s}
 .reveal-delay-3{transition-delay:.3s}
-.cmyk-bar{display:flex;height:5px}
+.cmyk-bar{display:flex;height:10px}
 .cmyk-bar span{flex:1}
-footer{background:var(--ink);color:#555;padding:28px 40px;display:flex;justify-content:space-between;align-items:center;font-size:13px}
-footer a{color:#555;text-decoration:none}
+footer{background:#fff;color:var(--ink-muted);font-size:13px}
+footer a{color:var(--ink-muted);text-decoration:none}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;padding:28px 40px}
 
 60%{transform:perspective(600px) rotateX(10deg)}80%{transform:perspective(600px) rotateX(-5deg)}100%{opacity:1;transform:perspective(600px) rotateX(0deg)}}
 
@@ -233,34 +245,28 @@ footer a{color:#555;text-decoration:none}
     <p class="section-sub reveal" style="max-width:none">Every situation is different. Here&#8217;s how it played out for three owners who chose to partner with us.</p>
     <div class="stories">
       <div class="story reveal">
-        <div class="story-badge">2024</div>
-        <div class="story-header">
-          <div class="story-logo">Mod Printing</div>
-          <div class="story-meta"><span><strong>50+ years</strong> in operation</span><span>East Islip, NY</span></div>
-        </div>
+        <div class="story-badge">Acquired 2024</div>
         <div class="story-body">
+          <div class="story-logo"><img src="images/mod-printing.png" alt="Mod Printing"></div>
+          <div class="story-meta"><span><strong>50+ years</strong> in operation</span><span>East Islip, NY</span></div>
           <div class="story-before"><div class="story-label">The Situation</div><p>A healthy, thriving business &#8212; but the owner was nearing retirement and wanted to hand the keys to someone reputable who would protect what he&#8217;d built.</p></div>
           <div class="story-after"><div class="story-label">After Printers 3</div><p>Printers 3 is serving Mod&#8217;s customers with the same level of care. The owner is <strong>happily retired</strong> and still collecting commissions.</p></div>
         </div>
       </div>
       <div class="story reveal reveal-delay-1">
-        <div class="story-badge">2024</div>
-        <div class="story-header">
-          <div class="story-logo">The Country Printer</div>
-          <div class="story-meta"><span><strong>30+ years</strong> in operation</span><span>Huntington, NY</span></div>
-        </div>
+        <div class="story-badge">Acquired 2024</div>
         <div class="story-body">
+          <div class="story-logo"><img src="images/country-printer.png" alt="The Country Printer"></div>
+          <div class="story-meta"><span><strong>30+ years</strong> in operation</span><span>Huntington, NY</span></div>
           <div class="story-before"><div class="story-label">The Situation</div><p>A prime storefront hit hard by COVID-19 with a loss of local work &#8212; and a recovery that stalled without the production capacity to fight back.</p></div>
           <div class="story-after"><div class="story-label">After Printers 3</div><p>Leveraging Printers 3&#8217;s equipment and team, the owner now <strong>manages new and existing relationships</strong> full-time without the operational burden.</p></div>
         </div>
       </div>
       <div class="story reveal reveal-delay-2">
-        <div class="story-badge">2021</div>
-        <div class="story-header">
-          <div class="story-logo">Rollins Printing</div>
-          <div class="story-meta"><span><strong>60+ years</strong> in operation</span><span>Babylon, NY</span></div>
-        </div>
+        <div class="story-badge">Acquired 2021</div>
         <div class="story-body">
+          <div class="story-logo"><img src="images/rollins-printing.png" alt="Rollins Printing"></div>
+          <div class="story-meta"><span><strong>60+ years</strong> in operation</span><span>Babylon, NY</span></div>
           <div class="story-before"><div class="story-label">The Situation</div><p>A one-man operation with an overworked owner running press, delivering orders, managing the books &#8212; and doing all of it alone.</p></div>
           <div class="story-after"><div class="story-label">After Printers 3</div><p>The owner relocated to Florida. His <strong>sales have more than doubled</strong>, and he no longer deals with the headaches of running a business solo.</p></div>
         </div>
@@ -306,42 +312,13 @@ footer a{color:#555;text-decoration:none}
   </div>
 </section>
 
-<section style="background:var(--cream)" id="what-we-look-for">
-  <div class="section-inner">
-    <div class="two-col">
-      <div>
-        <div class="section-label reveal">Who&#8217;s a good fit</div>
-        <h2 class="reveal">What we look for in a partner</h2>
-        <p class="section-sub reveal" style="margin-bottom:36px">We&#8217;re not buying equipment &#8212; we&#8217;re adding great print shops to a family. We&#8217;re selective because that&#8217;s how you build something that lasts.</p>
-        <div class="attributes reveal">
-          <div class="attribute"><h4>Stellar Reputation</h4><p>Long-standing, exceptional standing in your local print community</p></div>
-          <div class="attribute"><h4>Deep Customer Base</h4><p>Strong ties to customers &#8212; local businesses or national accounts</p></div>
-          <div class="attribute"><h4>Skilled Owners</h4><p>Experienced and talented operators who know their craft</p></div>
-          <div class="attribute"><h4>Established Niche</h4><p>A shop that&#8217;s become exceptional at one or a few things</p></div>
-        </div>
-      </div>
-      <div>
-        <div class="section-label reveal">What you get</div>
-        <h2 class="reveal">What Printers 3 brings to the table</h2>
-        <p class="section-sub reveal" style="margin-bottom:36px">We give your shop the infrastructure it needs to keep growing &#8212; without asking you to sacrifice what makes it yours.</p>
-        <div class="attributes reveal">
-          <div class="attribute"><h4>True Partnership</h4><p>A permanent home designed to support your shop&#8217;s continued success</p></div>
-          <div class="attribute"><h4>Autonomy</h4><p>Your name, your image, and your relationships stay exactly as they are</p></div>
-          <div class="attribute"><h4>Flexibility</h4><p>Whether you&#8217;re retiring or growing, we structure around what you need</p></div>
-          <div class="attribute"><h4>Platform to Grow</h4><p>More labor, more equipment, more production capability behind your name</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section style="background:var(--ink);padding:96px 40px" id="faq">
+<section style="background:var(--white);padding:96px 40px" id="faq">
   <div class="section-inner">
     <div class="section-label reveal" style="color:#CC4444">
-      <span style="display:block;width:18px;height:2px;background:#CC4444;margin-right:10px"></span>
-      Questions owners actually ask
+      Questions Owners Actually Ask
     </div>
-    <h2 class="reveal" style="color:#fff;margin-bottom:52px">Things you&#8217;re probably wondering</h2>
+    <h2 class="reveal" style="color:var(--ink);margin-bottom:52px">What You&#8217;re Probably Wondering</h2>
     <div class="faq-list reveal">
 
       <div class="faq-item">
@@ -439,28 +416,62 @@ footer a{color:#555;text-decoration:none}
 </section>
 
 <section class="cta-section" id="contact">
-  <div class="section-inner" style="text-align:center">
-    <div class="section-label reveal" style="justify-content:center;color:rgba(255,255,255,.5)">No obligation, completely confidential</div>
-    <h2 class="reveal" style="color:#fff;font-size:clamp(32px,4vw,52px)">Let&#8217;s talk about your shop.</h2>
-    <p class="reveal" style="font-size:18px;color:rgba(255,255,255,.75);max-width:520px;margin:0 auto 40px;line-height:1.6">One conversation costs nothing. Tell us where you are, and we&#8217;ll tell you honestly whether we&#8217;re a good fit.</p>
-    <a href="mailto:jack@printers3.net" class="btn-white reveal">Email Jack Directly</a>
-    <div class="cta-contact reveal">
-      <a href="tel:6319440986">&#128222; (631) 944-0986</a>
-      <a href="mailto:jack@printers3.net">&#9993; jack@printers3.net</a>
-      <span style="color:rgba(255,255,255,.4)">43 Corporate Drive, Hauppauge, NY 11788</span>
+  <div class="section-inner">
+    <div class="cta-two-col">
+      <div>
+        <h2 class="reveal" style="color:#fff;font-size:clamp(32px,4vw,52px)">Let&#8217;s Talk.</h2>
+        <div class="cta-left-info reveal">
+          <a href="mailto:jack@printers3.net">jack@printers3.net</a>
+          <a href="tel:6319440986">(631) 944-0986</a>
+          <span>43 Corporate Drive, Hauppauge, NY 11788</span>
+        </div>
+      </div>
+      <form class="contact-form reveal" action="https://formspree.io/f/mojyzvno" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="shop">Your Print Shop Name</label>
+            <input type="text" id="shop" name="shop" placeholder="Smith Printing Co.">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="john@yourshop.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" placeholder="City, State">
+        </div>
+        <div class="form-group">
+          <label for="message">Tell us about your situation</label>
+          <textarea id="message" name="message" placeholder="Anything we should know..."></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-white">Send Message</button>
+        </div>
+      </form>
     </div>
   </div>
 </section>
 
-<div class="cmyk-bar">
-  <span style="background:#00AEEF"></span><span style="background:#EC008C"></span>
-  <span style="background:#FFF200"></span><span style="background:#2B2B2B"></span>
-  <span style="background:#CC0000"></span>
-</div>
-
 <footer>
-  <span>&#169; 2026 Printers 3. Hauppauge, NY.</span>
-  <span>joinprinters3.com</span>
+  <div class="footer-inner">
+    <span>&#169; 2026 Printers 3. Hauppauge, NY.</span>
+    <span>joinprinters3.com</span>
+  </div>
+  <div class="cmyk-bar">
+    <span style="background:#00AEEF"></span><span style="background:#EC008C"></span>
+    <span style="background:#FFF200"></span><span style="background:#2B2B2B"></span>
+  </div>
 </footer>
 
 <script>
