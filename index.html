@@ -164,6 +164,53 @@ footer a{color:var(--ink-muted);text-decoration:none}
 .scenario.visible{animation:flipInX 0.65s ease-out forwards}
 .scenario.reveal-delay-1.visible{animation-delay:0.2s}
 .scenario.reveal-delay-2.visible{animation-delay:0.4s}
+
+@media(max-width:768px){
+  /* Nav */
+  nav{padding:16px 20px}
+  .nav-links{gap:12px}
+  .nav-links a:not(.nav-cta){display:none}
+
+  /* Sections */
+  section{padding:56px 20px}
+  .section-sub{margin-bottom:32px}
+
+  /* Hero */
+  .hero{padding:100px 20px 56px}
+  .hero-sub{font-size:16px}
+  .hero-actions{flex-direction:column}
+  .btn-primary,.btn-outline{text-align:center;width:100%}
+
+  /* Scenarios — stack tag above text */
+  .scenario{grid-template-columns:1fr;gap:12px;padding:28px 20px}
+
+  /* Compare — hide the "typical buyer" column, show only Printers 3 */
+  .compare{grid-template-columns:1fr}
+  .compare-col:first-child{display:none}
+
+  /* Stories — single column, fix badge/logo overlap */
+  .stories{grid-template-columns:1fr}
+  .story-badge{position:static;display:inline-block;margin-bottom:12px}
+  .story-body{padding:24px 20px}
+  .story-logo{margin-bottom:8px}
+
+  /* Process */
+  .steps-wrap{padding:0}
+
+  /* Contact — form goes below address */
+  .cta-two-col{grid-template-columns:1fr;gap:32px}
+  .contact-form .form-row{grid-template-columns:1fr}
+  .cta-section{padding:56px 20px}
+
+  /* FAQ */
+  .faq-q span:first-child{font-size:15px}
+  .faq-a p{padding-right:0}
+
+  /* Footer */
+  .footer-inner{flex-direction:column;gap:6px;text-align:center;padding:20px}
+
+  h2{font-size:clamp(26px,7vw,38px)}
+}
 </style>
 
 <section class="hero">
