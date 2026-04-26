@@ -68,11 +68,11 @@ h2{font-family:var(--font-display);font-size:clamp(32px,4vw,52px);line-height:1.
 .process-bg .section-sub{color:#aaa}
 .steps-wrap{position:relative;max-width:680px;margin:0 auto}
 .step{display:grid;grid-template-columns:72px 1fr;gap:36px;align-items:flex-start;margin-bottom:0;position:relative;z-index:2}
-.step-left{display:flex;flex-direction:column;align-items:center}
+.step-left{display:flex;flex-direction:column;align-items:center;align-self:stretch}
 .step-num{width:56px;height:56px;border-radius:50%;background:var(--gold);color:#1C1C1C;font-family:var(--font-display);font-size:22px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;z-index:3;transition:transform .4s,box-shadow .4s}
-.step-num.active{transform:scale(1.12);box-shadow:0 0 0 8px rgba(204,0,0,.18)}
-.step-connector{width:2px;flex:1;min-height:64px;margin-top:0;position:relative;overflow:hidden}
-.step-connector-inner{width:100%;height:0;border-left:3px dashed #CC0000;position:absolute;top:0;left:-1px;transition:height .7s cubic-bezier(.4,0,.2,1)}
+.step-num.active{transform:scale(1.12);box-shadow:0 0 0 8px rgba(232,201,122,.35)}
+.step-connector{width:2px;flex:1;min-height:64px;margin-top:8px;margin-bottom:8px;position:relative;overflow:hidden}
+.step-connector-inner{width:100%;height:0;border-left:3px dashed var(--gold);position:absolute;top:0;left:-1px;transition:height .7s cubic-bezier(.4,0,.2,1)}
 .step-connector-inner.drawn{height:100%}
 .step-body{padding-bottom:64px}
 .step:last-child .step-body{padding-bottom:0}
@@ -172,8 +172,8 @@ footer a{color:#555;text-decoration:none}
 <section style="background:var(--white);padding:96px 40px">
   <div class="section-inner">
     <div class="section-label reveal">Is this you?</div>
-    <h2 class="reveal">You&#8217;ve spent decades building this.</h2>
-    <p class="section-sub reveal">Whatever brought you here, we have a path forward that respects everything you&#8217;ve worked for&#8230;.</p>
+    <h2 class="reveal">You&#8217;ve Spent Decades Building This.</h2>
+    <p class="section-sub reveal" style="max-width:none">Whatever brought you here, we have a path forward that respects everything you&#8217;ve worked for&#8230;.</p>
     <div class="scenarios">
       <div class="scenario reveal">
         <span class="scenario-tag">Succession</span>
@@ -203,8 +203,8 @@ footer a{color:#555;text-decoration:none}
 <section class="diff-bg" id="look-for">
   <div class="section-inner">
     <div class="section-label reveal">This isn&#8217;t a typical acquisition</div>
-    <h2 class="reveal">A real partnership.</h2>
-    <p class="section-sub reveal">Most buyers just want your equipment and your customer list. We want to make sure you&#8217;re proud of what happens next.</p>
+    <h2 class="reveal">A Real Partnership.</h2>
+    <p class="section-sub reveal" style="max-width:none">Most buyers just want your equipment and your customer list. We want to make sure you&#8217;re proud of what happens next.</p>
     <div class="compare reveal">
       <div class="compare-col">
         <div class="compare-header" style="color:var(--ink-muted)">A Typical Buyer</div>
@@ -229,8 +229,8 @@ footer a{color:#555;text-decoration:none}
 <section class="stories-bg" id="stories">
   <div class="section-inner">
     <div class="section-label reveal">Real partners, real outcomes</div>
-    <h2 class="reveal">Print shops that joined the Printers 3 family</h2>
-    <p class="section-sub reveal">Every situation is different. Here&#8217;s how it played out for three owners who chose to partner with us.</p>
+    <h2 class="reveal">Print Shops Who Joined Our Family</h2>
+    <p class="section-sub reveal" style="max-width:none">Every situation is different. Here&#8217;s how it played out for three owners who chose to partner with us.</p>
     <div class="stories">
       <div class="story reveal">
         <div class="story-badge">2024</div>
@@ -272,7 +272,7 @@ footer a{color:#555;text-decoration:none}
 <section class="process-bg" id="how-it-works">
   <div class="section-inner">
     <div class="section-label reveal">Simple and straightforward</div>
-    <h2 class="reveal">How the process works</h2>
+    <h2 class="reveal">How the Process Works</h2>
     <p class="section-sub reveal" style="color:#888">From first conversation to active partnership &#8212; most deals move at your pace, not ours.</p>
     <div class="steps-wrap">
       <div class="step" data-step="0">
@@ -280,27 +280,27 @@ footer a{color:#555;text-decoration:none}
           <div class="step-num" id="sn1">1</div>
           <div class="step-connector"><div class="step-connector-inner" id="sc1"></div></div>
         </div>
-        <div class="step-body"><h4>An honest conversation</h4><p>You tell us about your shop, your goals, and your timeline. No pressure, no obligation. Just a real discussion.</p></div>
+        <div class="step-body"><h4>An Honest Conversation</h4><p>You tell us about your shop, your goals and your timeline. No pressure, complete confidentiality.</p></div>
       </div>
       <div class="step" data-step="1">
         <div class="step-left">
           <div class="step-num" id="sn2">2</div>
           <div class="step-connector"><div class="step-connector-inner" id="sc2"></div></div>
         </div>
-        <div class="step-body"><h4>We learn your business</h4><p>We look at your customers, equipment, team, and financials. We move fast and keep it confidential.</p></div>
+        <div class="step-body"><h4>We Learn Your Business</h4><p>We look at your customers, equipment, team and financials. We move on your terms.</p></div>
       </div>
       <div class="step" data-step="2">
         <div class="step-left">
           <div class="step-num" id="sn3">3</div>
           <div class="step-connector"><div class="step-connector-inner" id="sc3"></div></div>
         </div>
-        <div class="step-body"><h4>A deal built around you</h4><p>We structure a partnership that fits your situation &#8212; whether you want a clean exit, ongoing commissions, or continued involvement.</p></div>
+        <div class="step-body"><h4>A Deal Built Around You</h4><p>We structure a partnership that fits your situation &#8212; whether you want a clean exit, ongoing commissions or continued involvement.</p></div>
       </div>
       <div class="step" data-step="3">
         <div class="step-left">
           <div class="step-num" id="sn4">4</div>
         </div>
-        <div class="step-body"><h4>Your legacy continues</h4><p>Your name stays. Your customers are taken care of. You move on &#8212; or stay involved &#8212; on your own terms.</p></div>
+        <div class="step-body"><h4>Your Legacy Continues</h4><p>Your name stays. Your customers are taken care of. You move on &#8212; or stay involved.</p></div>
       </div>
     </div>
   </div>
