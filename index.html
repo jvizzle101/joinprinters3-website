@@ -158,6 +158,30 @@ footer a{color:var(--ink-muted);text-decoration:none}
 .scenario.visible{animation:flipInX 0.65s ease-out forwards}
 .scenario.reveal-delay-1.visible{animation-delay:0.2s}
 .scenario.reveal-delay-2.visible{animation-delay:0.4s}
+
+@media(max-width:768px){
+  nav{padding:20px 24px}
+  .nav-links a:not(.nav-cta){display:none}
+  section{padding:64px 24px}
+  .section-sub{margin-bottom:36px}
+  .hero{padding:100px 24px 64px}
+  .hero-sub{font-size:16px}
+  .hero-actions{flex-direction:column}
+  .btn-primary,.btn-outline{text-align:center}
+  .two-col{grid-template-columns:1fr;gap:40px}
+  .stories{grid-template-columns:1fr}
+  .story::before{display:none}
+  .scenario{grid-template-columns:1fr;gap:16px;padding:28px 24px}
+  .compare{grid-template-columns:1fr}
+  .compare-col:first-child{display:none}
+  .cta-two-col{grid-template-columns:1fr;gap:40px}
+  .contact-form .form-row{grid-template-columns:1fr}
+  .cta-section{padding:64px 24px}
+  .footer-inner{flex-direction:column;gap:8px;text-align:center;padding:20px 24px}
+  .faq-q span:first-child{font-size:15px}
+  .steps-wrap{padding:0}
+  h2{font-size:clamp(28px,7vw,42px)}
+}
 </style>
 
 <section class="hero">
